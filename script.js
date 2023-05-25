@@ -1,8 +1,9 @@
 function encriptar(){
-    let texto= document.getElementById("texto").value;
+    let texto= document.getElementById("texto").value.toLowerCase();
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muneco = document.getElementById("dibujo");
+    /*let muneco = document.getElementById("dibujo");*/
+    let mensaje = document.getElementById("mensaje");
 
     var textocifrado = texto
                             .replace(/e/gi, "enter")
@@ -12,12 +13,12 @@ function encriptar(){
                             .replace(/u/gi, "ufat");
 
     if (texto.length != 0) {
-        document.getElementById("texto").value = textocifrado;
+        mensaje.value = textocifrado;
         tituloMensaje.textContent ="¡Texto encriptado con Éxito!";
         parrafo.textContent ="";
-        muneco.src = "./imagenes/confidential.jpg";
+       /* muneco.style.display = "none";*/
     } else {
-        muneco.src = "./imagenes/Muñeco.png";
+        /*muneco.src = "./imagenes/Muñeco.png";*/
         tituloMensaje.textContent ="Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar.";
         alert("Debes ingresar un texto");
@@ -29,7 +30,8 @@ function desencriptar(){
     let texto= document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
-    let muneco = document.getElementById("dibujo");
+    /*let muneco = document.getElementById("dibujo");*/
+    let mensaje = document.getElementById("mensaje");
 
     var textocifrado = texto
                             .replace(/enter/gi, "e")
@@ -39,12 +41,12 @@ function desencriptar(){
                             .replace(/ufat/gi, "u");
 
     if (texto.length != 0) {
-        document.getElementById("texto").value = textocifrado;
+        mensaje.value = textocifrado;
         tituloMensaje.textContent ="¡Texto desencriptado con Éxito!";
         parrafo.textContent ="";
-        muneco.src = "./imagenes/padlock.gif";
+        /*muneco.style.display = "none";*/
     } else {
-        muneco.src = "./imagenes/Muñeco.png";
+        /*muneco.src = "./imagenes/Muñeco.png";*/
         tituloMensaje.textContent ="Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar.";
         alert("Debes ingresar un texto");

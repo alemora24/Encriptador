@@ -15,6 +15,11 @@
     
     <div class="container">
 
+        <div class="logo">
+            <img src="imagenes/Logo-1.png">
+
+        </div>
+
         <div class="encriptar">
 
             <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí."></textarea>
@@ -35,14 +40,19 @@
         </div>
 
         <div class="encriptado">
-            <img src="imagenes/Muñeco.png" alt="" id="dibujo">
+            <!-- <img src="imagenes/Muñeco.png" alt="" id="dibujo"> -->
+          
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" ></textarea> 
 
             <div class="mensaje-encriptado" id="mensaje-encriptado">
+
                 <h2 id="titulo-mensaje"> Ningún mensaje fue encontrado.</h2>
 
                 <p id="parrafo">Ingrese  el texto que deseas encriptar o desencriptar.</p>
-                
-                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" ></textarea> -->
+            
+                <!-- <button class="copiar" type="button" onclick="copiar()">
+                    Copiar
+                </button> -->
 
             </div>
 

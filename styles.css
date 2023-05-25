@@ -10,6 +10,12 @@
     background: #f3f5fc;
 }
 
+.logo{
+    width: 100%;
+    float: left;
+    padding: 2%;
+}
+
 .texto{
     position: absolute;
     width: 42%;
@@ -25,6 +31,7 @@
 
     line-height: 150%;
     background-color: #f3f5fc;
+    resize: none;
 }
 
 .texto::placeholder{
@@ -116,16 +123,47 @@
 }
 
 .encriptado {
+    background-image: url("/imagenes/Muneco.png");
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
+    
     position: absolute;
     width: 30%;
     height: 90%;
     left: 60%;
     top: 5%;
+    
     background: #ffffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
+
+}
+
+.mensaje{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #495057;
+
+    border: none;
+    line-height: 150%;
+    background-color: #ffffff;
+    resize: none;
+}
+
+.mensaje:focus, .mensaje:active{
+    border: none;
+    outline: none;
 }
 
 .mensaje-encriptado{
@@ -163,12 +201,43 @@
     color: #495055;
 }
 
-.encriptado img{
+.copiar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4%;
+    gap: 8px;
+    
+    position: absolute;
+    width: 80%;
+    height: 40%;
+
+    left: 10%;
+    top: 120%;
+
+    background: #ffffff;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    margin: auto
+    color: #0A3871;
+
+}
+
+/*.encriptado img{
     position: absolute;
     width: 80%;
     height: 50%;
     top: 15%;
-}
+}*/
 
  /*Responsive Design*/
 @media (max-width: 57.5em){
